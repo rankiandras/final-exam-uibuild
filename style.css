@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+  a{
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+  
+/* End of css reset */
+  
+body {
+    background-color: #f8f7f3;
+
+}
+
+#root {
+    width: 100%;
+    margin: auto;
+}
+  
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 40px;
+    font-family: 'Overpass', sans-serif;
+    color: #f8f7f3;
+    font-weight: 400;
+    border-bottom: solid 1px #145434;
+    margin-bottom: 60px;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: #1a24fb;
+    text-transform: uppercase;
+}
+  
+  
+#caption {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+  }
+  
+  #headerIcon {
+    font-size: 24px;
+  }
+  
+  #bookCards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    row-gap: 100px;
+    column-gap: 20px;
+    /* padding: 120px 100px 0 100px; */
+    justify-content: center;
+    margin: 120px auto;
+  }
+  
+  @media screen and (max-width: 950px) {
+    #beerCards {
+      grid-template-columns: auto;
+      grid-column-gap: 100px;
+    }
+  }
+  
+  
+  .card {
+    position: relative;
+    width: 400px;
+    /* height: 250px; */
+    background-color: #f8f7f3;
+    color: #1a24fb;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px;
+    border: solid 2px #1a24fb;
+  }
+  
+  /* @media screen and (max-width: 950px) {
+    .card {
+    }
+  } */
+  
+  
+  
+  .numP {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f8f7f3;
+    color: #1a24fb;
+    text-align: center;
+  }
+  
+  /* .numP {
+    transform: translateY(2px);
+  } */
+  
+  
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    /* padding: 35px 0; */
+    min-height: 100px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .sub {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .sub {
+    margin-top: 10px;
+  }
+  
+  .text {
+    font-weight: 700;
+    min-height: 180px;
+  }
+  
+  button {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 18px;
+    color: #1a24fb;
+    padding-right: 5px;
+    font-size: 14px;
+    bottom: 0;
+    transform: translateY(30px);
+  }
+  
+  
+  
+  button:hover {
+    background-color: #1a24fb;
+    color: #f8f7f3;
+    /* border: solid 3px #ffeedf; */
+  }
+  
+  #arrowIcon {
+    font-size: 18px;
+    margin-left: 35px;
+  }
+  
+  /* .details {
+    font-size: 14px;
+    font-weight: 400;
+  } */
